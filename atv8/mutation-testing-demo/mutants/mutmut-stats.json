@@ -1,0 +1,55 @@
+{
+    "tests_by_mangled_function_name": {
+        "calculator.operations.x\u01c1Calculator\u01c1add": [
+            "tests/test_operations.py::TestCalculator::test_add"
+        ],
+        "calculator.operations.x\u01c1Calculator\u01c1multiply": [
+            "tests/test_operations.py::TestCalculator::test_multiply"
+        ],
+        "calculator.operations.x\u01c1Calculator\u01c1divide": [
+            "tests/test_operations.py::TestCalculator::test_divide_zero"
+        ],
+        "calculator.operations.x\u01c1Calculator\u01c1square_root": [
+            "tests/test_operations.py::TestCalculator::test_square_root_negative"
+        ],
+        "calculator.operations.x\u01c1Calculator\u01c1factorial": [
+            "tests/test_operations.py::TestCalculator::test_factorial_negative"
+        ],
+        "calculator.operations.x\u01c1Calculator\u01c1absolute_value": [
+            "tests/test_operations.py::TestCalculator::test_absolute_value_basic"
+        ],
+        "calculator.operations.x\u01c1Calculator\u01c1max_of_two": [
+            "tests/test_operations.py::TestCalculator::test_max_of_two_equal"
+        ],
+        "calculator.operations.x\u01c1Calculator\u01c1is_positive": [
+            "tests/test_operations.py::TestCalculator::test_is_positive_true"
+        ],
+        "calculator.operations.x\u01c1Calculator\u01c1calculate_percentage": [
+            "tests/test_operations.py::TestCalculator::test_calculate_percentage_basic"
+        ],
+        "calculator.operations.x\u01c1Calculator\u01c1grade_classification": [
+            "tests/test_operations.py::TestCalculator::test_grade_classification_a"
+        ],
+        "calculator.operations.x\u01c1Calculator\u01c1fibonacci": [
+            "tests/test_operations.py::TestCalculator::test_fibonacci_base_case"
+        ],
+        "calculator.operations.x\u01c1Calculator\u01c1is_prime": [
+            "tests/test_operations.py::TestCalculator::test_is_prime_true_case"
+        ]
+    },
+    "duration_by_test": {
+        "tests/test_operations.py::TestCalculator::test_add": 0.00019002399994860752,
+        "tests/test_operations.py::TestCalculator::test_multiply": 0.00017311300007349928,
+        "tests/test_operations.py::TestCalculator::test_divide_zero": 0.00013621399966723402,
+        "tests/test_operations.py::TestCalculator::test_square_root_negative": 0.00013601399996332475,
+        "tests/test_operations.py::TestCalculator::test_factorial_negative": 0.00014027199995325645,
+        "tests/test_operations.py::TestCalculator::test_absolute_value_basic": 0.00015007000001787674,
+        "tests/test_operations.py::TestCalculator::test_max_of_two_equal": 0.0001343710000583087,
+        "tests/test_operations.py::TestCalculator::test_is_positive_true": 0.00015879600005064276,
+        "tests/test_operations.py::TestCalculator::test_calculate_percentage_basic": 0.00013831800015395856,
+        "tests/test_operations.py::TestCalculator::test_grade_classification_a": 0.00014874799990138854,
+        "tests/test_operations.py::TestCalculator::test_fibonacci_base_case": 0.00013720600009037298,
+        "tests/test_operations.py::TestCalculator::test_is_prime_true_case": 0.00016593000009379466
+    },
+    "stats_time": 0.23834948099999997
+}
