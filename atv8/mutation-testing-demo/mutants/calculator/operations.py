@@ -101,59 +101,31 @@ class Calculator:
     def xǁCalculatorǁdivide__mutmut_orig(self, a: Number, b: Number) -> Number:
         """Divide dois números."""
         if b == 0:
-            raise ValueError("Divisão por zero não é permitida")
+            raise ValueError(None)
         return a / b
 
     def xǁCalculatorǁdivide__mutmut_1(self, a: Number, b: Number) -> Number:
         """Divide dois números."""
         if b != 0:
-            raise ValueError("Divisão por zero não é permitida")
+            raise ValueError(None)
         return a / b
 
     def xǁCalculatorǁdivide__mutmut_2(self, a: Number, b: Number) -> Number:
         """Divide dois números."""
         if b == 1:
-            raise ValueError("Divisão por zero não é permitida")
+            raise ValueError(None)
         return a / b
 
     def xǁCalculatorǁdivide__mutmut_3(self, a: Number, b: Number) -> Number:
         """Divide dois números."""
         if b == 0:
             raise ValueError(None)
-        return a / b
-
-    def xǁCalculatorǁdivide__mutmut_4(self, a: Number, b: Number) -> Number:
-        """Divide dois números."""
-        if b == 0:
-            raise ValueError("XXDivisão por zero não é permitidaXX")
-        return a / b
-
-    def xǁCalculatorǁdivide__mutmut_5(self, a: Number, b: Number) -> Number:
-        """Divide dois números."""
-        if b == 0:
-            raise ValueError("divisão por zero não é permitida")
-        return a / b
-
-    def xǁCalculatorǁdivide__mutmut_6(self, a: Number, b: Number) -> Number:
-        """Divide dois números."""
-        if b == 0:
-            raise ValueError("DIVISÃO POR ZERO NÃO É PERMITIDA")
-        return a / b
-
-    def xǁCalculatorǁdivide__mutmut_7(self, a: Number, b: Number) -> Number:
-        """Divide dois números."""
-        if b == 0:
-            raise ValueError("Divisão por zero não é permitida")
         return a * b
     
     xǁCalculatorǁdivide__mutmut_mutants : ClassVar[MutantDict] = {
     'xǁCalculatorǁdivide__mutmut_1': xǁCalculatorǁdivide__mutmut_1, 
         'xǁCalculatorǁdivide__mutmut_2': xǁCalculatorǁdivide__mutmut_2, 
-        'xǁCalculatorǁdivide__mutmut_3': xǁCalculatorǁdivide__mutmut_3, 
-        'xǁCalculatorǁdivide__mutmut_4': xǁCalculatorǁdivide__mutmut_4, 
-        'xǁCalculatorǁdivide__mutmut_5': xǁCalculatorǁdivide__mutmut_5, 
-        'xǁCalculatorǁdivide__mutmut_6': xǁCalculatorǁdivide__mutmut_6, 
-        'xǁCalculatorǁdivide__mutmut_7': xǁCalculatorǁdivide__mutmut_7
+        'xǁCalculatorǁdivide__mutmut_3': xǁCalculatorǁdivide__mutmut_3
     }
     
     def divide(self, *args, **kwargs):
@@ -185,59 +157,31 @@ class Calculator:
     def xǁCalculatorǁsquare_root__mutmut_orig(self, number: Number) -> float:
         """Calcula a raiz quadrada de um número."""
         if number < 0:
-            raise ValueError("Raiz quadrada de número negativo não é real")
+            raise ValueError(None)
         return math.sqrt(number)
 
     def xǁCalculatorǁsquare_root__mutmut_1(self, number: Number) -> float:
         """Calcula a raiz quadrada de um número."""
         if number <= 0:
-            raise ValueError("Raiz quadrada de número negativo não é real")
+            raise ValueError(None)
         return math.sqrt(number)
 
     def xǁCalculatorǁsquare_root__mutmut_2(self, number: Number) -> float:
         """Calcula a raiz quadrada de um número."""
         if number < 1:
-            raise ValueError("Raiz quadrada de número negativo não é real")
+            raise ValueError(None)
         return math.sqrt(number)
 
     def xǁCalculatorǁsquare_root__mutmut_3(self, number: Number) -> float:
         """Calcula a raiz quadrada de um número."""
         if number < 0:
             raise ValueError(None)
-        return math.sqrt(number)
-
-    def xǁCalculatorǁsquare_root__mutmut_4(self, number: Number) -> float:
-        """Calcula a raiz quadrada de um número."""
-        if number < 0:
-            raise ValueError("XXRaiz quadrada de número negativo não é realXX")
-        return math.sqrt(number)
-
-    def xǁCalculatorǁsquare_root__mutmut_5(self, number: Number) -> float:
-        """Calcula a raiz quadrada de um número."""
-        if number < 0:
-            raise ValueError("raiz quadrada de número negativo não é real")
-        return math.sqrt(number)
-
-    def xǁCalculatorǁsquare_root__mutmut_6(self, number: Number) -> float:
-        """Calcula a raiz quadrada de um número."""
-        if number < 0:
-            raise ValueError("RAIZ QUADRADA DE NÚMERO NEGATIVO NÃO É REAL")
-        return math.sqrt(number)
-
-    def xǁCalculatorǁsquare_root__mutmut_7(self, number: Number) -> float:
-        """Calcula a raiz quadrada de um número."""
-        if number < 0:
-            raise ValueError("Raiz quadrada de número negativo não é real")
         return math.sqrt(None)
     
     xǁCalculatorǁsquare_root__mutmut_mutants : ClassVar[MutantDict] = {
     'xǁCalculatorǁsquare_root__mutmut_1': xǁCalculatorǁsquare_root__mutmut_1, 
         'xǁCalculatorǁsquare_root__mutmut_2': xǁCalculatorǁsquare_root__mutmut_2, 
-        'xǁCalculatorǁsquare_root__mutmut_3': xǁCalculatorǁsquare_root__mutmut_3, 
-        'xǁCalculatorǁsquare_root__mutmut_4': xǁCalculatorǁsquare_root__mutmut_4, 
-        'xǁCalculatorǁsquare_root__mutmut_5': xǁCalculatorǁsquare_root__mutmut_5, 
-        'xǁCalculatorǁsquare_root__mutmut_6': xǁCalculatorǁsquare_root__mutmut_6, 
-        'xǁCalculatorǁsquare_root__mutmut_7': xǁCalculatorǁsquare_root__mutmut_7
+        'xǁCalculatorǁsquare_root__mutmut_3': xǁCalculatorǁsquare_root__mutmut_3
     }
     
     def square_root(self, *args, **kwargs):
@@ -284,7 +228,7 @@ class Calculator:
     def xǁCalculatorǁfactorial__mutmut_orig(self, n: int) -> int:
         """Calcula o fatorial de um número."""
         if n < 0:
-            raise ValueError("Fatorial não definido para números negativos")
+            raise ValueError(None)
         if n <= 1:
             return 1
         result = 1
@@ -295,7 +239,7 @@ class Calculator:
     def xǁCalculatorǁfactorial__mutmut_1(self, n: int) -> int:
         """Calcula o fatorial de um número."""
         if n <= 0:
-            raise ValueError("Fatorial não definido para números negativos")
+            raise ValueError(None)
         if n <= 1:
             return 1
         result = 1
@@ -306,7 +250,7 @@ class Calculator:
     def xǁCalculatorǁfactorial__mutmut_2(self, n: int) -> int:
         """Calcula o fatorial de um número."""
         if n < 1:
-            raise ValueError("Fatorial não definido para números negativos")
+            raise ValueError(None)
         if n <= 1:
             return 1
         result = 1
@@ -318,7 +262,7 @@ class Calculator:
         """Calcula o fatorial de um número."""
         if n < 0:
             raise ValueError(None)
-        if n <= 1:
+        if n < 1:
             return 1
         result = 1
         for i in range(2, n + 1):
@@ -328,8 +272,8 @@ class Calculator:
     def xǁCalculatorǁfactorial__mutmut_4(self, n: int) -> int:
         """Calcula o fatorial de um número."""
         if n < 0:
-            raise ValueError("XXFatorial não definido para números negativosXX")
-        if n <= 1:
+            raise ValueError(None)
+        if n <= 2:
             return 1
         result = 1
         for i in range(2, n + 1):
@@ -339,9 +283,9 @@ class Calculator:
     def xǁCalculatorǁfactorial__mutmut_5(self, n: int) -> int:
         """Calcula o fatorial de um número."""
         if n < 0:
-            raise ValueError("fatorial não definido para números negativos")
+            raise ValueError(None)
         if n <= 1:
-            return 1
+            return 2
         result = 1
         for i in range(2, n + 1):
             result *= i
@@ -350,51 +294,7 @@ class Calculator:
     def xǁCalculatorǁfactorial__mutmut_6(self, n: int) -> int:
         """Calcula o fatorial de um número."""
         if n < 0:
-            raise ValueError("FATORIAL NÃO DEFINIDO PARA NÚMEROS NEGATIVOS")
-        if n <= 1:
-            return 1
-        result = 1
-        for i in range(2, n + 1):
-            result *= i
-        return result
-
-    def xǁCalculatorǁfactorial__mutmut_7(self, n: int) -> int:
-        """Calcula o fatorial de um número."""
-        if n < 0:
-            raise ValueError("Fatorial não definido para números negativos")
-        if n < 1:
-            return 1
-        result = 1
-        for i in range(2, n + 1):
-            result *= i
-        return result
-
-    def xǁCalculatorǁfactorial__mutmut_8(self, n: int) -> int:
-        """Calcula o fatorial de um número."""
-        if n < 0:
-            raise ValueError("Fatorial não definido para números negativos")
-        if n <= 2:
-            return 1
-        result = 1
-        for i in range(2, n + 1):
-            result *= i
-        return result
-
-    def xǁCalculatorǁfactorial__mutmut_9(self, n: int) -> int:
-        """Calcula o fatorial de um número."""
-        if n < 0:
-            raise ValueError("Fatorial não definido para números negativos")
-        if n <= 1:
-            return 2
-        result = 1
-        for i in range(2, n + 1):
-            result *= i
-        return result
-
-    def xǁCalculatorǁfactorial__mutmut_10(self, n: int) -> int:
-        """Calcula o fatorial de um número."""
-        if n < 0:
-            raise ValueError("Fatorial não definido para números negativos")
+            raise ValueError(None)
         if n <= 1:
             return 1
         result = None
@@ -402,10 +302,10 @@ class Calculator:
             result *= i
         return result
 
-    def xǁCalculatorǁfactorial__mutmut_11(self, n: int) -> int:
+    def xǁCalculatorǁfactorial__mutmut_7(self, n: int) -> int:
         """Calcula o fatorial de um número."""
         if n < 0:
-            raise ValueError("Fatorial não definido para números negativos")
+            raise ValueError(None)
         if n <= 1:
             return 1
         result = 2
@@ -413,10 +313,10 @@ class Calculator:
             result *= i
         return result
 
-    def xǁCalculatorǁfactorial__mutmut_12(self, n: int) -> int:
+    def xǁCalculatorǁfactorial__mutmut_8(self, n: int) -> int:
         """Calcula o fatorial de um número."""
         if n < 0:
-            raise ValueError("Fatorial não definido para números negativos")
+            raise ValueError(None)
         if n <= 1:
             return 1
         result = 1
@@ -424,10 +324,10 @@ class Calculator:
             result *= i
         return result
 
-    def xǁCalculatorǁfactorial__mutmut_13(self, n: int) -> int:
+    def xǁCalculatorǁfactorial__mutmut_9(self, n: int) -> int:
         """Calcula o fatorial de um número."""
         if n < 0:
-            raise ValueError("Fatorial não definido para números negativos")
+            raise ValueError(None)
         if n <= 1:
             return 1
         result = 1
@@ -435,10 +335,10 @@ class Calculator:
             result *= i
         return result
 
-    def xǁCalculatorǁfactorial__mutmut_14(self, n: int) -> int:
+    def xǁCalculatorǁfactorial__mutmut_10(self, n: int) -> int:
         """Calcula o fatorial de um número."""
         if n < 0:
-            raise ValueError("Fatorial não definido para números negativos")
+            raise ValueError(None)
         if n <= 1:
             return 1
         result = 1
@@ -446,10 +346,10 @@ class Calculator:
             result *= i
         return result
 
-    def xǁCalculatorǁfactorial__mutmut_15(self, n: int) -> int:
+    def xǁCalculatorǁfactorial__mutmut_11(self, n: int) -> int:
         """Calcula o fatorial de um número."""
         if n < 0:
-            raise ValueError("Fatorial não definido para números negativos")
+            raise ValueError(None)
         if n <= 1:
             return 1
         result = 1
@@ -457,10 +357,10 @@ class Calculator:
             result *= i
         return result
 
-    def xǁCalculatorǁfactorial__mutmut_16(self, n: int) -> int:
+    def xǁCalculatorǁfactorial__mutmut_12(self, n: int) -> int:
         """Calcula o fatorial de um número."""
         if n < 0:
-            raise ValueError("Fatorial não definido para números negativos")
+            raise ValueError(None)
         if n <= 1:
             return 1
         result = 1
@@ -468,10 +368,10 @@ class Calculator:
             result *= i
         return result
 
-    def xǁCalculatorǁfactorial__mutmut_17(self, n: int) -> int:
+    def xǁCalculatorǁfactorial__mutmut_13(self, n: int) -> int:
         """Calcula o fatorial de um número."""
         if n < 0:
-            raise ValueError("Fatorial não definido para números negativos")
+            raise ValueError(None)
         if n <= 1:
             return 1
         result = 1
@@ -479,10 +379,10 @@ class Calculator:
             result *= i
         return result
 
-    def xǁCalculatorǁfactorial__mutmut_18(self, n: int) -> int:
+    def xǁCalculatorǁfactorial__mutmut_14(self, n: int) -> int:
         """Calcula o fatorial de um número."""
         if n < 0:
-            raise ValueError("Fatorial não definido para números negativos")
+            raise ValueError(None)
         if n <= 1:
             return 1
         result = 1
@@ -490,10 +390,10 @@ class Calculator:
             result *= i
         return result
 
-    def xǁCalculatorǁfactorial__mutmut_19(self, n: int) -> int:
+    def xǁCalculatorǁfactorial__mutmut_15(self, n: int) -> int:
         """Calcula o fatorial de um número."""
         if n < 0:
-            raise ValueError("Fatorial não definido para números negativos")
+            raise ValueError(None)
         if n <= 1:
             return 1
         result = 1
@@ -501,10 +401,10 @@ class Calculator:
             result = i
         return result
 
-    def xǁCalculatorǁfactorial__mutmut_20(self, n: int) -> int:
+    def xǁCalculatorǁfactorial__mutmut_16(self, n: int) -> int:
         """Calcula o fatorial de um número."""
         if n < 0:
-            raise ValueError("Fatorial não definido para números negativos")
+            raise ValueError(None)
         if n <= 1:
             return 1
         result = 1
@@ -528,11 +428,7 @@ class Calculator:
         'xǁCalculatorǁfactorial__mutmut_13': xǁCalculatorǁfactorial__mutmut_13, 
         'xǁCalculatorǁfactorial__mutmut_14': xǁCalculatorǁfactorial__mutmut_14, 
         'xǁCalculatorǁfactorial__mutmut_15': xǁCalculatorǁfactorial__mutmut_15, 
-        'xǁCalculatorǁfactorial__mutmut_16': xǁCalculatorǁfactorial__mutmut_16, 
-        'xǁCalculatorǁfactorial__mutmut_17': xǁCalculatorǁfactorial__mutmut_17, 
-        'xǁCalculatorǁfactorial__mutmut_18': xǁCalculatorǁfactorial__mutmut_18, 
-        'xǁCalculatorǁfactorial__mutmut_19': xǁCalculatorǁfactorial__mutmut_19, 
-        'xǁCalculatorǁfactorial__mutmut_20': xǁCalculatorǁfactorial__mutmut_20
+        'xǁCalculatorǁfactorial__mutmut_16': xǁCalculatorǁfactorial__mutmut_16
     }
     
     def factorial(self, *args, **kwargs):
@@ -835,42 +731,42 @@ class Calculator:
     def xǁCalculatorǁcalculate_discount__mutmut_orig(self, price: Number, discount_percent: Number) -> Number:
         """Calcula o preço com desconto."""
         if discount_percent < 0 or discount_percent > 100:
-            raise ValueError("Desconto deve estar entre 0 e 100")
+            raise ValueError(None)
         discount_amount = (price * discount_percent) / 100
         return price - discount_amount
 
     def xǁCalculatorǁcalculate_discount__mutmut_1(self, price: Number, discount_percent: Number) -> Number:
         """Calcula o preço com desconto."""
         if discount_percent < 0 and discount_percent > 100:
-            raise ValueError("Desconto deve estar entre 0 e 100")
+            raise ValueError(None)
         discount_amount = (price * discount_percent) / 100
         return price - discount_amount
 
     def xǁCalculatorǁcalculate_discount__mutmut_2(self, price: Number, discount_percent: Number) -> Number:
         """Calcula o preço com desconto."""
         if discount_percent <= 0 or discount_percent > 100:
-            raise ValueError("Desconto deve estar entre 0 e 100")
+            raise ValueError(None)
         discount_amount = (price * discount_percent) / 100
         return price - discount_amount
 
     def xǁCalculatorǁcalculate_discount__mutmut_3(self, price: Number, discount_percent: Number) -> Number:
         """Calcula o preço com desconto."""
         if discount_percent < 1 or discount_percent > 100:
-            raise ValueError("Desconto deve estar entre 0 e 100")
+            raise ValueError(None)
         discount_amount = (price * discount_percent) / 100
         return price - discount_amount
 
     def xǁCalculatorǁcalculate_discount__mutmut_4(self, price: Number, discount_percent: Number) -> Number:
         """Calcula o preço com desconto."""
         if discount_percent < 0 or discount_percent >= 100:
-            raise ValueError("Desconto deve estar entre 0 e 100")
+            raise ValueError(None)
         discount_amount = (price * discount_percent) / 100
         return price - discount_amount
 
     def xǁCalculatorǁcalculate_discount__mutmut_5(self, price: Number, discount_percent: Number) -> Number:
         """Calcula o preço com desconto."""
         if discount_percent < 0 or discount_percent > 101:
-            raise ValueError("Desconto deve estar entre 0 e 100")
+            raise ValueError(None)
         discount_amount = (price * discount_percent) / 100
         return price - discount_amount
 
@@ -878,62 +774,34 @@ class Calculator:
         """Calcula o preço com desconto."""
         if discount_percent < 0 or discount_percent > 100:
             raise ValueError(None)
-        discount_amount = (price * discount_percent) / 100
+        discount_amount = None
         return price - discount_amount
 
     def xǁCalculatorǁcalculate_discount__mutmut_7(self, price: Number, discount_percent: Number) -> Number:
         """Calcula o preço com desconto."""
         if discount_percent < 0 or discount_percent > 100:
-            raise ValueError("XXDesconto deve estar entre 0 e 100XX")
-        discount_amount = (price * discount_percent) / 100
+            raise ValueError(None)
+        discount_amount = (price * discount_percent) * 100
         return price - discount_amount
 
     def xǁCalculatorǁcalculate_discount__mutmut_8(self, price: Number, discount_percent: Number) -> Number:
         """Calcula o preço com desconto."""
         if discount_percent < 0 or discount_percent > 100:
-            raise ValueError("desconto deve estar entre 0 e 100")
-        discount_amount = (price * discount_percent) / 100
+            raise ValueError(None)
+        discount_amount = (price / discount_percent) / 100
         return price - discount_amount
 
     def xǁCalculatorǁcalculate_discount__mutmut_9(self, price: Number, discount_percent: Number) -> Number:
         """Calcula o preço com desconto."""
         if discount_percent < 0 or discount_percent > 100:
-            raise ValueError("DESCONTO DEVE ESTAR ENTRE 0 E 100")
-        discount_amount = (price * discount_percent) / 100
+            raise ValueError(None)
+        discount_amount = (price * discount_percent) / 101
         return price - discount_amount
 
     def xǁCalculatorǁcalculate_discount__mutmut_10(self, price: Number, discount_percent: Number) -> Number:
         """Calcula o preço com desconto."""
         if discount_percent < 0 or discount_percent > 100:
-            raise ValueError("Desconto deve estar entre 0 e 100")
-        discount_amount = None
-        return price - discount_amount
-
-    def xǁCalculatorǁcalculate_discount__mutmut_11(self, price: Number, discount_percent: Number) -> Number:
-        """Calcula o preço com desconto."""
-        if discount_percent < 0 or discount_percent > 100:
-            raise ValueError("Desconto deve estar entre 0 e 100")
-        discount_amount = (price * discount_percent) * 100
-        return price - discount_amount
-
-    def xǁCalculatorǁcalculate_discount__mutmut_12(self, price: Number, discount_percent: Number) -> Number:
-        """Calcula o preço com desconto."""
-        if discount_percent < 0 or discount_percent > 100:
-            raise ValueError("Desconto deve estar entre 0 e 100")
-        discount_amount = (price / discount_percent) / 100
-        return price - discount_amount
-
-    def xǁCalculatorǁcalculate_discount__mutmut_13(self, price: Number, discount_percent: Number) -> Number:
-        """Calcula o preço com desconto."""
-        if discount_percent < 0 or discount_percent > 100:
-            raise ValueError("Desconto deve estar entre 0 e 100")
-        discount_amount = (price * discount_percent) / 101
-        return price - discount_amount
-
-    def xǁCalculatorǁcalculate_discount__mutmut_14(self, price: Number, discount_percent: Number) -> Number:
-        """Calcula o preço com desconto."""
-        if discount_percent < 0 or discount_percent > 100:
-            raise ValueError("Desconto deve estar entre 0 e 100")
+            raise ValueError(None)
         discount_amount = (price * discount_percent) / 100
         return price + discount_amount
     
@@ -947,11 +815,7 @@ class Calculator:
         'xǁCalculatorǁcalculate_discount__mutmut_7': xǁCalculatorǁcalculate_discount__mutmut_7, 
         'xǁCalculatorǁcalculate_discount__mutmut_8': xǁCalculatorǁcalculate_discount__mutmut_8, 
         'xǁCalculatorǁcalculate_discount__mutmut_9': xǁCalculatorǁcalculate_discount__mutmut_9, 
-        'xǁCalculatorǁcalculate_discount__mutmut_10': xǁCalculatorǁcalculate_discount__mutmut_10, 
-        'xǁCalculatorǁcalculate_discount__mutmut_11': xǁCalculatorǁcalculate_discount__mutmut_11, 
-        'xǁCalculatorǁcalculate_discount__mutmut_12': xǁCalculatorǁcalculate_discount__mutmut_12, 
-        'xǁCalculatorǁcalculate_discount__mutmut_13': xǁCalculatorǁcalculate_discount__mutmut_13, 
-        'xǁCalculatorǁcalculate_discount__mutmut_14': xǁCalculatorǁcalculate_discount__mutmut_14
+        'xǁCalculatorǁcalculate_discount__mutmut_10': xǁCalculatorǁcalculate_discount__mutmut_10
     }
     
     def calculate_discount(self, *args, **kwargs):

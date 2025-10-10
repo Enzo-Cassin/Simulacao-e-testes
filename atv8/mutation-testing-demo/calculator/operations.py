@@ -24,7 +24,7 @@ class Calculator:
     def divide(self, a: Number, b: Number) -> Number:
         """Divide dois números."""
         if b == 0:
-            raise ValueError("Divisão por zero não é permitida")
+            raise ValueError(None)
         return a / b
 
     def power(self, base: Number, exponent: Number) -> Number:
@@ -34,7 +34,7 @@ class Calculator:
     def square_root(self, number: Number) -> float:
         """Calcula a raiz quadrada de um número."""
         if number < 0:
-            raise ValueError("Raiz quadrada de número negativo não é real")
+            raise ValueError(None)
         return math.sqrt(number)
 
     def is_even(self, number: int) -> bool:
@@ -44,7 +44,7 @@ class Calculator:
     def factorial(self, n: int) -> int:
         """Calcula o fatorial de um número."""
         if n < 0:
-            raise ValueError("Fatorial não definido para números negativos")
+            raise ValueError(None)
         if n <= 1:
             return 1
         result = 1
@@ -96,7 +96,7 @@ class Calculator:
     def calculate_discount(self, price: Number, discount_percent: Number) -> Number:
         """Calcula o preço com desconto."""
         if discount_percent < 0 or discount_percent > 100:
-            raise ValueError("Desconto deve estar entre 0 e 100")
+            raise ValueError(None)
         discount_amount = (price * discount_percent) / 100
         return price - discount_amount
 
