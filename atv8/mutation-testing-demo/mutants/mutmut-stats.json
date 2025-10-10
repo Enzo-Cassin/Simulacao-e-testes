@@ -7,12 +7,15 @@
             "tests/test_operations.py::TestCalculator::test_multiply"
         ],
         "calculator.operations.x\u01c1Calculator\u01c1divide": [
-            "tests/test_operations.py::TestCalculator::test_divide_zero"
+            "tests/test_operations.py::TestCalculator::test_divide_zero",
+            "tests/test_operations.py::TestCalculator::test_divide"
         ],
         "calculator.operations.x\u01c1Calculator\u01c1square_root": [
-            "tests/test_operations.py::TestCalculator::test_square_root_negative"
+            "tests/test_operations.py::TestCalculator::test_square_root_negative",
+            "tests/test_operations.py::TestCalculator::test_square_root"
         ],
         "calculator.operations.x\u01c1Calculator\u01c1factorial": [
+            "tests/test_operations.py::TestCalculator::test_factorial",
             "tests/test_operations.py::TestCalculator::test_factorial_negative"
         ],
         "calculator.operations.x\u01c1Calculator\u01c1absolute_value": [
@@ -35,6 +38,31 @@
         ],
         "calculator.operations.x\u01c1Calculator\u01c1is_prime": [
             "tests/test_operations.py::TestCalculator::test_is_prime_true_case"
+        ],
+        "calculator.operations.x\u01c1Calculator\u01c1is_in_range": [
+            "tests/test_operations.py::TestCalculator::test_is_in_range"
+        ],
+        "calculator.operations.x\u01c1Calculator\u01c1calculate_discount": [
+            "tests/test_operations.py::TestCalculator::test_calculate_discount_errors",
+            "tests/test_operations.py::TestCalculator::test_calculate_discount"
+        ],
+        "calculator.operations.x\u01c1Calculator\u01c1count_digits": [
+            "tests/test_operations.py::TestCalculator::test_Count_digitis"
+        ],
+        "calculator.operations.x\u01c1Calculator\u01c1compare_numbers": [
+            "tests/test_operations.py::TestCalculator::test_compare_numbers"
+        ],
+        "calculator.operations.x\u01c1Calculator\u01c1subtract": [
+            "tests/test_operations.py::TestCalculator::test_sub"
+        ],
+        "calculator.operations.x\u01c1Calculator\u01c1min_of_three": [
+            "tests/test_operations.py::TestCalculator::test_min_of_three_equal"
+        ],
+        "calculator.operations.x\u01c1Calculator\u01c1is_even": [
+            "tests/test_operations.py::TestCalculator::test_is_even"
+        ],
+        "calculator.operations.x\u01c1Calculator\u01c1power": [
+            "tests/test_operations.py::TestCalculator::test_power"
         ]
     },
     "duration_by_test": {
@@ -49,7 +77,19 @@
         "tests/test_operations.py::TestCalculator::test_calculate_percentage_basic": 0.00013831800015395856,
         "tests/test_operations.py::TestCalculator::test_grade_classification_a": 0.00014874799990138854,
         "tests/test_operations.py::TestCalculator::test_fibonacci_base_case": 0.00013720600009037298,
-        "tests/test_operations.py::TestCalculator::test_is_prime_true_case": 0.00016593000009379466
+        "tests/test_operations.py::TestCalculator::test_is_prime_true_case": 0.00016593000009379466,
+        "tests/test_operations.py::TestCalculator::test_is_in_range": 0.00020702699839603156,
+        "tests/test_operations.py::TestCalculator::test_square_root": 0.00018078800349030644,
+        "tests/test_operations.py::TestCalculator::test_calculate_discount": 0.00017743100033840165,
+        "tests/test_operations.py::TestCalculator::test_divide": 0.00016240300465142354,
+        "tests/test_operations.py::TestCalculator::test_Count_digitis": 0.00015024000458652154,
+        "tests/test_operations.py::TestCalculator::test_compare_numbers": 0.00019001500186277553,
+        "tests/test_operations.py::TestCalculator::test_calculate_discount_errors": 0.00017002700042212382,
+        "tests/test_operations.py::TestCalculator::test_sub": 0.00017890400340547785,
+        "tests/test_operations.py::TestCalculator::test_min_of_three_equal": 0.00018056699627777562,
+        "tests/test_operations.py::TestCalculator::test_is_even": 0.0001506810003775172,
+        "tests/test_operations.py::TestCalculator::test_factorial": 0.00015944799815770239,
+        "tests/test_operations.py::TestCalculator::test_power": 0.00017219100118381903
     },
     "stats_time": 0.23834948099999997
 }
